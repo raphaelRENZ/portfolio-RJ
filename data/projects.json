@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Gestionnaire de tâches",
+      "summary": "Application web de gestion de tâches avec filtres et états.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "tags": ["frontend", "ui"],
+      "semester": "S2",
+      "date": "2025-05",
+      "context": "Projet scolaire",
+      "responsibilities": ["Conception", "Développement", "Tests"],
+      "outcomes": ["MVP opérationnel", "Bonnes pratiques sémantiques"],
+      "links": {
+        "github": "https://github.com/username/projet-taches",
+        "demo": "https://demo.example.com/taches"
+      }
+    },
+    {
+      "id": "p2",
+      "title": "API simple de notes",
+      "summary": "API REST pour notes d'étudiants avec persistance.",
+      "technologies": ["PHP", "SQL"],
+      "tags": ["backend", "api"],
+      "semester": "S3",
+      "date": "2025-11",
+      "context": "TP/Stage",
+      "responsibilities": ["Modélisation", "Implémentation", "Documentation"],
+      "outcomes": ["Endpoints CRUD", "Sécurisation basique"],
+      "links": {
+        "github": "https://github.com/username/api-notes",
+        "demo": "https://demo.example.com/api-notes"
+      }
+    }
+  ]
+}

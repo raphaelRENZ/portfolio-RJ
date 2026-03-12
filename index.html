@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raphaël Renz Jaen — Portfolio BTS SIO SLAM</title>
+  <meta name="description" content="Portfolio étudiant BTS SIO SLAM : projets, compétences, parcours, contact.">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header>
+    <div class="brand">
+      <h1>Raphaël Renz Jaen</h1>
+      <p>BTS SIO SLAM — Étudiant</p>
+    </div>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="contenu">
+    <section id="accueil" aria-labelledby="titre-accueil">
+      <h2 id="titre-accueil">Bienvenue</h2>
+      <p>voici mon portfolio.
+Vous y découvrirez mon parcours, mes projets et les compétences que je développe en BTS SIO SLAM.</p>
+      <p><a href="#contact"> voir mon cv ? </a></p>
+    </section>
+
+    <section id="profil" aria-labelledby="titre-profil">
+      <h2 id="titre-profil">Profil</h2>
+      <article>
+        <header>
+          <h3>À propos</h3>
+        </header>
+        <p>Actuellement étudiant en BTS SIO SLAM, je développe mes compétences en programmation et en développement web.
+Mon objectif professionnel est d’évoluer dans le domaine du développement et de gagner en expérience grâce à des projets et des stages..</p>
+        <figure>
+          <img src="assets/img/photo.jpg" alt="Photo de profil de Raphaël Renz Jaen">
+          <figcaption>Raphaël Renz Jaen</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="competences" aria-labelledby="titre-competences">
+      <h2 id="titre-competences">Compétences</h2>
+      <section aria-labelledby="titre-techniques">
+        <h3 id="titre-techniques">Techniques</h3>
+        <ul>
+          <li>Langages : <span class="tech-tag">HTML</span>, <span class="tech-tag">SYMFONY</span>, <span class="tech-tag">CSS</span>, <span class="tech-tag">JavaScript</span>, <span class="tech-tag">PHP</span></li>
+          <li>Frameworks : <span class="tech-tag">Symfony</span>, <span class="tech-tag">React</span></li>
+          <li>Outils : <span class="tech-tag">Git</span>, <span class="tech-tag">Docker</span>, <span class="tech-tag">SQL</span></li>
+        </ul>
+      </section>
+      <section aria-labelledby="titre-softskills">
+        <h3 id="titre-softskills">Soft skills</h3>
+        <ul>
+          <li>Communication</li>
+          <li>Organisation</li>
+          <li>Esprit d’équipe</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="projets" aria-labelledby="titre-projets">
+      <h2 id="titre-projets">mes mini Projets</h2>
+      <article>
+        <header>
+          <h3>Nom du projet</h3>
+          <p><time datetime="2025-05">Mai 2025</time> — Contexte (stage/cours/perso)</p>
+        </header>
+        <p>Brève description du problème et de la solution.</p>
+        <ul aria-label="Technologies utilisées">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <footer>
+          <p><a href="#">Dépôt Git</a> • <a href="#">Démo</a></p>
+        </footer>
+      </article>
+      <!-- Dupliquer des <article> par projet -->
+    </section>
+
+    <section id="parcours" aria-labelledby="titre-parcours">
+      <h2 id="titre-parcours">Parcours</h2>
+      <ol>
+        <li>
+          <article>
+            <header>
+              <h3>BTS SIO SLAM — IPSSI Paris</h3>
+              <p><time datetime="2024-09">2024</time> — <time datetime="2026-06">2026</time></p>
+            </header>
+            <p>Développement web, bases de données, projets applicatifs, sécurité.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Stage — AfroCaribe</h3>
+              <p><time datetime="2025-05">Mai 2025</time> — <time datetime="2025-06">Juin 2025</time></p>
+            </header>
+            <p>Développement front-end, amélioration UI/UX et bases techniques pour les projets numériques.</p>
+            <button class="button" data-modal="stage-modal">Voir plus de détails</button>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section id="veille" aria-labelledby="titre-veille">
+      <h2 id="titre-veille">Veille technologique</h2>
+      <article>
+        <header>
+          <h3>Sujet suivi</h3>
+        </header>
+        <p>Résumé et apprentissages.</p>
+        <ul aria-label="Sources">
+          <li><a href="#">Article 1</a></li>
+          <li><a href="#">Conférence 2</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <aside aria-labelledby="titre-aside">
+      <h2 id="titre-aside">Infos rapides</h2>
+      <address>
+        <p>Villeparisis, France</p>
+        <p><a href="mailto:raphaelrenzj@gmail.com">raphaelrenzj@gmail.com</a></p>
+        <p><a href="tel:+33771683884">07 71 68 38 84</a></p>
+      </address>
+      <p><a href="static/resume.pdf">CV (PDF)</a></p>
+    </aside>
+
+    <section id="contact" aria-labelledby="titre-contact">
+      <h2 id="titre-contact">Contact</h2>
+      <p>Je suis disponible pour un stage/alternance.</p>
+      <ul aria-label="Réseaux">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Email</a></li>
+      </ul>
+      <!-- Formulaire optionnel -->
+      <!--
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Me contacter</legend>
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </fieldset>
+      </form>
+      -->
+    </section>
+  </main>
+
+  <!-- Modal Stage -->
+  <div id="stage-modal" class="modal" role="dialog" aria-labelledby="modal-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="modal-titre">Stage — AfroCaribe</h2>
+        <p><time datetime="2025-05">Mai 2025</time> — <time datetime="2025-06">Juin 2025</time></p>
+      </header>
+      
+      <section>
+        <h3>Contexte</h3>
+        <p>AfroCaribe avait besoin de développer et améliorer ses pages web, d’optimiser son interface utilisateur et de poser des bases techniques solides pour ses futurs projets numériques. Mon stage s’inscrivait donc dans une démarche à la fois technique, créative et autonome, en lien direct avec les besoins réels de l’entreprise.</p>
+      </section>
+
+      <section>
+        <h3>Missions réalisées</h3>
+        <ul>
+          <li><strong>Mission 1 : Développement et amélioration de pages web.</strong> Mise en place de la structure des pages, amélioration de l’ergonomie et de la lisibilité, optimisation de l’affichage sur desktop et mobile pour des pages claires et modernes.</li>
+          <li><strong>Mission 2 : Conception du design et de l’interface utilisateur.</strong> Choix des couleurs, hiérarchie des contenus et navigation (menus, sections, boutons) pour transformer des idées en interfaces concrètes et centrées UX.</li>
+          <li><strong>Mission 3 : Travail en autonomie et gestion du code.</strong> Réalisation complète de certaines tâches jusqu’à la mise en ligne et utilisation de GitLab pour gérer le code source et suivre les modifications.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Technologies utilisées</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">Symfony</span>
+          <span class="tech-tag">GitLab</span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Galerie</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/stage1.jpg" alt="Capture d'écran du projet 1">
+            <figcaption>Page web développée durant le stage, interface claire et navigation fluide, en accord avec l’identité AfroCaribe.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage2.jpg" alt="Capture d'écran du projet 2">
+            <figcaption>Autre page ou fonctionnalité réalisée, illustrant l’usage de JavaScript et le travail sur l’expérience utilisateur.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h3>Résultats & Apprentissages</h3>
+        <p>Ce stage m’a permis de consolider mes compétences en développement front-end, de mieux comprendre la conception d’un projet web de A à Z, de travailler de manière autonome et organisée, de découvrir des outils professionnels comme GitLab et Symfony, et d’améliorer ma sensibilité au design et à l’expérience utilisateur. Mon travail a contribué à améliorer la qualité et la cohérence des pages web d’AfroCaribe.</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Raphaël Renz Jaen</p>
+    <p><small>Portfolio étudiant BTS SIO SLAM</small></p>
+  </footer>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
