@@ -1,17 +1,58 @@
-#accueil {
-	background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(167, 139, 250, 0.12)),
-		var(--color-surface);
-	border: 1px solid rgba(34, 211, 238, 0.25);
+.hero-intro {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.8rem;
+	padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2.5rem);
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	outline: 0 !important;
 }
 
-#accueil h2 {
-	color: var(--color-accent);
+.hero-name {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(2.5rem, 8vw, 6rem);
+	line-height: 0.98;
+	letter-spacing: 0.01em;
+	max-width: 14ch;
+}
+
+.hero-subtitle {
+	margin: 0;
+	font-size: clamp(1.1rem, 2.3vw, 2rem);
+	color: rgba(244, 243, 239, 0.9);
+}
+
+@media (max-width: 900px) {
+	.hero-intro {
+		min-height: 50vh;
+		padding: clamp(2rem, 7vw, 2.5rem) clamp(1rem, 5vw, 1.5rem);
+	}
+
+	.hero-name {
+		font-size: clamp(2.1rem, 13vw, 3.4rem);
+	}
+
+	.hero-subtitle {
+		font-size: clamp(1rem, 5vw, 1.35rem);
+	}
 }
 
 #profil figure {
 	display: flex;
 	align-items: center;
 	gap: var(--space-3);
+}
+
+#profil article h3 {
+	font-size: 0.95rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--color-muted);
 }
 
 #profil img {
@@ -21,8 +62,90 @@
 	border: 2px solid var(--color-border);
 }
 
-#competences ul {
+#competences {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.skills-block {
+	padding: 0;
+}
+
+.skills-intro {
+	margin: 0 0 1rem;
+	color: var(--color-muted);
+}
+
+.skills-icons {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 0.9rem;
+}
+
+.skills-icons li {
+	padding: 0.8rem;
+	border-radius: var(--radius-md);
+	border: 1px solid var(--color-border);
+	background: rgba(255, 255, 255, 0.02);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.55rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.skills-icons img {
+	width: 44px;
+	height: 44px;
+	object-fit: contain;
+	border-radius: 0;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.skills-card {
+	margin: 0;
+	padding: 1rem;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: rgba(255, 255, 255, 0.015);
+}
+
+.skills-tags {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.skills-tags li {
+	padding: 0.35rem 0.65rem;
+	border-radius: var(--radius-sm);
+	border: 1px solid var(--color-border);
+	background: rgba(34, 211, 238, 0.08);
+	font-weight: 600;
+}
+
+.skills-list {
 	list-style: disc;
+	padding-left: 1.2rem;
+	margin: 0;
+}
+
+@media (max-width: 900px) {
+	.skills-grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 #projets article header p {
@@ -82,6 +205,98 @@
 
 #veille ul[aria-label] {
 	padding-left: 1.1rem;
+}
+
+/* ── Grille de cartes compactes ── */
+.cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 1rem;
+}
+
+.card-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	border-radius: var(--radius-md);
+	border: 1px solid var(--color-border);
+	background: var(--color-surface-2);
+	overflow: hidden;
+	cursor: pointer;
+	text-align: left;
+	padding: 0;
+	transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.card-item:not(.card-placeholder):hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+	border-color: var(--color-accent);
+}
+
+.card-cover {
+	margin: 0;
+	height: 130px;
+	background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(167, 139, 250, 0.12));
+	border-bottom: 1px solid var(--color-border);
+}
+
+.card-placeholder .card-cover {
+	background: repeating-linear-gradient(
+		45deg,
+		rgba(255,255,255,0.02),
+		rgba(255,255,255,0.02) 10px,
+		transparent 10px,
+		transparent 20px
+	);
+}
+
+.card-body {
+	padding: 0.85rem 1rem 0.5rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.card-body h3 {
+	margin: 0;
+	font-size: 1rem;
+	font-family: var(--font-display);
+}
+
+.card-body p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--color-muted);
+	line-height: 1.4;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.card-tag {
+	display: inline-block;
+	font-size: 0.72rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--color-accent);
+}
+
+.card-cta {
+	display: block;
+	padding: 0.55rem 1rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--color-accent);
+	border-top: 1px solid var(--color-border);
+}
+
+.card-cta--disabled {
+	color: var(--color-muted);
 }
 
 #contact ul {

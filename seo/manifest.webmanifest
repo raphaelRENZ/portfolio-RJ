@@ -1,20 +1,9 @@
 {
-  "name": "Portfolio Nom Prénom",
-  "short_name": "Portfolio",
-  "start_url": ".",
+  "name": "Raphael Renz Jaen - Portfolio BTS SIO SLAM",
+  "short_name": "Portfolio RJ",
+  "start_url": "/portfolio-RJ/",
+  "scope": "/portfolio-RJ/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0f172a",
-  "icons": [
-    {
-      "src": "/assets/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#0f172a"
 }

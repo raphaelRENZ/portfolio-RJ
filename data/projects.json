@@ -1,35 +1,51 @@
 {
   "projects": [
     {
-      "id": "p1",
-      "title": "Gestionnaire de tâches",
-      "summary": "Application web de gestion de tâches avec filtres et états.",
+      "id": "portfolio-rj",
+      "title": "Portfolio BTS SIO SLAM",
+      "summary": "Portfolio personnel one-page pour presenter mon profil, mes projets, mon parcours et mon experience de stage.",
       "technologies": ["HTML", "CSS", "JavaScript"],
-      "tags": ["frontend", "ui"],
-      "semester": "S2",
-      "date": "2025-05",
-      "context": "Projet scolaire",
-      "responsibilities": ["Conception", "Développement", "Tests"],
-      "outcomes": ["MVP opérationnel", "Bonnes pratiques sémantiques"],
+      "tags": ["frontend", "portfolio", "ui"],
+      "semester": "S4",
+      "date": "2026-03",
+      "context": "Projet personnel",
+      "responsibilities": ["Structure HTML semantique", "Integration responsive", "Mise en ligne sur GitHub Pages"],
+      "outcomes": ["Site publiable", "Presentation centralisee de mon parcours", "Base evolutive pour ajouter de nouveaux projets"],
       "links": {
-        "github": "https://github.com/username/projet-taches",
-        "demo": "https://demo.example.com/taches"
+        "github": "https://github.com/raphaelRENZ/portfolio-RJ",
+        "demo": "https://raphaelrenz.github.io/portfolio-RJ/"
       }
     },
     {
-      "id": "p2",
+      "id": "gestionnaire-taches",
+      "title": "Gestionnaire de taches",
+      "summary": "Application web permettant d'ajouter, filtrer et suivre des taches selon leur avancement.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "tags": ["frontend", "dom", "ui"],
+      "semester": "S2",
+      "date": "2025-05",
+      "context": "Projet de formation",
+      "responsibilities": ["Structure de l'interface", "Logique de filtrage", "Tests fonctionnels"],
+      "outcomes": ["Manipulation du DOM", "Gestion d'etat cote client", "Interface plus lisible et responsive"],
+      "links": {
+        "github": "",
+        "demo": ""
+      }
+    },
+    {
+      "id": "api-notes",
       "title": "API simple de notes",
-      "summary": "API REST pour notes d'étudiants avec persistance.",
+      "summary": "API REST pour gerer des notes d'etudiants avec des operations CRUD et une base de donnees relationnelle.",
       "technologies": ["PHP", "SQL"],
-      "tags": ["backend", "api"],
+      "tags": ["backend", "api", "database"],
       "semester": "S3",
       "date": "2025-11",
-      "context": "TP/Stage",
-      "responsibilities": ["Modélisation", "Implémentation", "Documentation"],
-      "outcomes": ["Endpoints CRUD", "Sécurisation basique"],
+      "context": "Projet de formation",
+      "responsibilities": ["Modelisation des donnees", "Implementation des routes", "Documentation de base"],
+      "outcomes": ["Premiere API fonctionnelle", "Mise en pratique du CRUD", "Travail sur la structure backend"],
       "links": {
-        "github": "https://github.com/username/api-notes",
-        "demo": "https://demo.example.com/api-notes"
+        "github": "",
+        "demo": ""
       }
     }
   ]

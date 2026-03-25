@@ -1,7 +1,7 @@
 :root {
-	--color-bg: #0f172a;
-	--color-surface: #111827;
-	--color-surface-2: #0b1220;
+	--color-bg: #09090f;
+	--color-surface: #111420;
+	--color-surface-2: #0b0d18;
 	--color-text: #f4f3ef;
 	--color-muted: #cbd5e1;
 	--color-border: #1f2937;
@@ -16,7 +16,7 @@
 	--color-info: #3b82f6;
 
 	--font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-	--font-display: "Space Grotesk", "Inter", "Segoe UI", system-ui, sans-serif;
+	--font-display: "Archivo Black", "Inter", "Segoe UI", system-ui, sans-serif;
 	--font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
 
 	--max-width: 1100px;

@@ -212,6 +212,19 @@ pre {
 	text-align: center;
 }
 
+.img-placeholder {
+	margin: 0;
+	border-radius: var(--radius-sm);
+	border: 2px dashed var(--color-border);
+	background: rgba(255, 255, 255, 0.03);
+	min-height: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0.75rem;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
