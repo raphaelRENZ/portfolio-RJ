@@ -30,76 +30,137 @@ function createList(items, className) {
 	return list;
 }
 
+function createProjectGallery(placeholders) {
+	const gallery = document.createElement('div');
+	gallery.className = 'project-gallery';
+
+	placeholders.forEach((label) => {
+		const placeholder = document.createElement('figure');
+		placeholder.className = 'project-shot-placeholder';
+
+		const caption = document.createElement('figcaption');
+		caption.textContent = label;
+
+		placeholder.appendChild(caption);
+		gallery.appendChild(placeholder);
+	});
+
+	return gallery;
+}
+
 function createProjectCard(project) {
 	const article = document.createElement('article');
 	article.id = project.id;
+	article.className = 'project-item';
 
+	// ── Header : titre (gauche) + date/semestre (droite) ──
 	const header = document.createElement('header');
+	header.className = 'project-item-header';
+
+	const titleWrap = document.createElement('div');
 	const title = document.createElement('h3');
 	title.textContent = project.title;
+	const badge = document.createElement('span');
+	badge.className = 'badge neutral';
+	badge.textContent = project.semester;
+	titleWrap.append(title, badge);
 
-	const meta = document.createElement('p');
-	meta.className = 'meta';
-	meta.textContent = `${formatProjectDate(project.date)} — ${project.context}`;
+	const metaWrap = document.createElement('div');
+	metaWrap.className = 'project-item-meta';
+	const dateEl = document.createElement('time');
+	dateEl.textContent = formatProjectDate(project.date);
+	const ctxEl = document.createElement('span');
+	ctxEl.textContent = project.context;
+	metaWrap.append(dateEl, document.createElement('br'), ctxEl);
 
-	const badgeWrap = document.createElement('p');
-	const semesterBadge = document.createElement('span');
-	semesterBadge.className = 'badge';
-	semesterBadge.textContent = project.semester;
-	badgeWrap.appendChild(semesterBadge);
+	header.append(titleWrap, metaWrap);
 
-	header.append(title, meta, badgeWrap);
-
+	// ── Résumé toujours visible ──
 	const summary = document.createElement('p');
 	summary.textContent = project.summary;
 
-	const technologies = createList(project.technologies, 'project-technologies');
-	technologies.setAttribute('aria-label', 'Technologies utilisees');
+	// ── Bouton toggle ──
+	const toggleButton = document.createElement('button');
+	toggleButton.type = 'button';
+	toggleButton.className = 'button project-toggle';
+	toggleButton.textContent = 'Voir plus de détails';
+	toggleButton.setAttribute('aria-expanded', 'false');
 
-	const responsibilitiesTitle = document.createElement('p');
-	responsibilitiesTitle.className = 'meta';
-	responsibilitiesTitle.textContent = 'Contributions principales';
+	// ── Détails masqués ──
+	const details = document.createElement('div');
+	details.className = 'project-details';
+	details.hidden = true;
 
-	const responsibilities = createList(project.responsibilities);
+	// Technologies (tags)
+	if (project.technologies?.length) {
+		const techTitle = document.createElement('p');
+		techTitle.className = 'meta';
+		techTitle.textContent = 'Technologies';
+		const techRow = document.createElement('div');
+		techRow.className = 'project-tech-tags';
+		project.technologies.forEach((tech) => {
+			const tag = document.createElement('span');
+			tag.className = 'tech-tag';
+			tag.textContent = tech;
+			techRow.appendChild(tag);
+		});
+		details.append(techTitle, techRow);
+	}
 
-	const outcomesTitle = document.createElement('p');
-	outcomesTitle.className = 'meta';
-	outcomesTitle.textContent = 'Resultats';
+	// Contributions
+	const respTitle = document.createElement('p');
+	respTitle.className = 'meta';
+	respTitle.textContent = 'Contributions principales';
+	details.append(respTitle, createList(project.responsibilities));
 
-	const outcomes = createList(project.outcomes);
+	// Résultats
+	const outTitle = document.createElement('p');
+	outTitle.className = 'meta';
+	outTitle.textContent = 'Résultats';
+	details.append(outTitle, createList(project.outcomes));
 
-	article.append(header, summary, technologies, responsibilitiesTitle, responsibilities, outcomesTitle, outcomes);
+	// Captures
+	if (Array.isArray(project.screenshotsPlaceholders) && project.screenshotsPlaceholders.length > 0) {
+		const galleryTitle = document.createElement('p');
+		galleryTitle.className = 'meta';
+		galleryTitle.textContent = 'Captures (à ajouter)';
+		details.append(galleryTitle, createProjectGallery(project.screenshotsPlaceholders));
+	}
 
+	// Liens
 	const links = [];
 	if (project.links?.github) {
-		const githubLink = document.createElement('a');
-		githubLink.href = project.links.github;
-		githubLink.textContent = 'Depot GitHub';
-		links.push(githubLink);
+		const a = document.createElement('a');
+		a.href = project.links.github;
+		a.textContent = 'Dépôt GitHub';
+		links.push(a);
 	}
-
 	if (project.links?.demo) {
-		const demoLink = document.createElement('a');
-		demoLink.href = project.links.demo;
-		demoLink.textContent = 'Voir la demo';
-		links.push(demoLink);
+		const a = document.createElement('a');
+		a.href = project.links.demo;
+		a.textContent = 'Voir la démo';
+		links.push(a);
 	}
-
 	if (links.length > 0) {
-		const footer = document.createElement('footer');
+		const foot = document.createElement('footer');
 		const linkGroup = document.createElement('p');
-
-		links.forEach((link, index) => {
-			if (index > 0) {
-				linkGroup.append(' • ');
-			}
+		links.forEach((link, i) => {
+			if (i > 0) linkGroup.append(' • ');
 			linkGroup.appendChild(link);
 		});
-
-		footer.appendChild(linkGroup);
-		article.appendChild(footer);
+		foot.appendChild(linkGroup);
+		details.appendChild(foot);
 	}
 
+	// Toggle
+	toggleButton.addEventListener('click', () => {
+		const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+		toggleButton.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+		toggleButton.textContent = expanded ? 'Voir plus de détails' : 'Voir moins';
+		details.hidden = expanded;
+	});
+
+	article.append(header, summary, toggleButton, details);
 	return article;
 }
 
@@ -122,6 +183,7 @@ async function loadProjects() {
 		projects.sort((left, right) => right.date.localeCompare(left.date));
 
 		projectsContainer.replaceChildren();
+		projectsContainer.classList.add('projects-list');
 		projects.forEach((project) => {
 			projectsContainer.appendChild(createProjectCard(project));
 		});

@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Raphael Renz Jaen | Portfolio BTS SIO SLAM</title>
-  <meta name="description" content="Portfolio de Raphael Renz Jaen, etudiant en BTS SIO SLAM : profil, projets, competences, parcours, veille et contact.">
+  <meta name="description" content="Portfolio de Raphael Renz Jaen, étudiant en BTS SIO SLAM : profil, projets, compétences, parcours, veille et contact.">
   <meta name="theme-color" content="#0f172a">
   <meta property="og:title" content="Raphael Renz Jaen | Portfolio BTS SIO SLAM">
-  <meta property="og:description" content="Decouvrez mon parcours, mes projets, mes competences et mon experience de stage en BTS SIO SLAM.">
+  <meta property="og:description" content="Découvrez mon parcours, mes projets, mes compétences et mon expérience de stage en BTS SIO SLAM.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://raphaelrenz.github.io/portfolio-RJ/">
   <link rel="canonical" href="https://raphaelrenz.github.io/portfolio-RJ/">
@@ -15,10 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/variables.css?v=20260325-1">
-  <link rel="stylesheet" href="assets/css/base.css?v=20260325-1">
-  <link rel="stylesheet" href="assets/css/components.css?v=20260325-1">
-  <link rel="stylesheet" href="assets/css/sections.css?v=20260325-1">
+  <link rel="stylesheet" href="assets/css/variables.css?v=20260512-20">
+  <link rel="stylesheet" href="assets/css/base.css?v=20260512-20">
+  <link rel="stylesheet" href="assets/css/components.css?v=20260512-20">
+  <link rel="stylesheet" href="assets/css/sections.css?v=20260512-20">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -26,10 +26,10 @@
   <header>
     <nav aria-label="Navigation principale">
       <ul>
-        <li><a href="#profil">A propos</a></li>
+        <li><a href="#profil">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
         <li><a href="#parcours">Expériences</a></li>
+        <li><a href="#projets">Projets</a></li>
         <li><a href="#veille">Veille</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -43,16 +43,15 @@
     </div>
 
     <section id="profil" aria-labelledby="titre-profil">
-      <h2 id="titre-profil">Profil</h2>
+      <h2 id="titre-profil" class="sr-only">À propos</h2>
       <article>
         <header>
           <h3>À propos</h3>
         </header>
-        <p>Actuellement etudiant en BTS SIO SLAM, je consolide mes competences en programmation, integration web et developpement d'applications. J'apprecie particulierement les projets ou il faut transformer un besoin concret en interface claire, fonctionnelle et maintenable.</p>
-        <p>Mon objectif est de progresser dans le developpement web et applicatif en continuant a travailler sur des projets reels, a renforcer mes bases techniques et a gagner en autonomie dans un contexte professionnel.</p>
+        <p>Actuellement étudiant en BTS SIO SLAM, je consolide mes compétences en programmation, intégration web et développement d'applications. J'apprécie particulièrement les projets où il faut transformer un besoin concret en interface claire, fonctionnelle et maintenable.</p>
+        <p>Mon objectif est de progresser dans le développement web et applicatif en continuant à travailler sur des projets réels, à renforcer mes bases techniques et à gagner en autonomie dans un contexte professionnel.</p>
         <figure>
           <img src="assets/img/photo.jpg" alt="Photo de profil de Raphaël Renz Jaen">
-          <figcaption>Raphaël Renz Jaen</figcaption>
         </figure>
       </article>
     </section>
@@ -96,6 +95,8 @@
           <ul class="skills-tags" aria-label="Stack complémentaire">
             <li>SQL</li>
             <li>React</li>
+            <li>Django</li>
+            <li>Expo</li>
             <li>Git</li>
             <li>Docker</li>
             <li>VS Code</li>
@@ -107,25 +108,25 @@
           <ul class="skills-list">
             <li>Communication</li>
             <li>Organisation</li>
-            <li>Esprit d'equipe</li>
+            <li>Esprit d'équipe</li>
             <li>Autonomie</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="projets" aria-labelledby="titre-projets">
-      <h2 id="titre-projets">Projets</h2>
-      <p>Cette section presente une selection de projets realises en autonomie ou dans le cadre de ma formation. Les cartes ci-dessous sont chargees depuis un fichier JSON pour faciliter les mises a jour.</p>
-      <div id="projects-list" aria-live="polite"></div>
-      <noscript>
-        <p>Active JavaScript pour afficher automatiquement la liste des projets.</p>
-      </noscript>
-    </section>
-
     <section id="parcours" aria-labelledby="titre-parcours">
       <h2 id="titre-parcours">Parcours</h2>
       <ol>
+        <li>
+          <article>
+            <header>
+              <h3>Baccalauréat technologique STMG</h3>
+              <p><time datetime="2020">2020</time> — <time datetime="2021">2021</time></p>
+            </header>
+            <p>Obtention du baccalauréat technologique STMG, avec consolidation des bases en gestion, communication et organisation de projet.</p>
+          </article>
+        </li>
         <li>
           <article>
             <header>
@@ -138,11 +139,136 @@
         <li>
           <article>
             <header>
-              <h3>Stage — AfroCaribe</h3>
+              <h3 class="stage-with-logo"><img class="stage-logo-inline" src="assets/img/stage1/logo.png" alt="Logo AfroCaribe" loading="lazy">Stage — AfroCaribe</h3>
               <p><time datetime="2025-05">Mai 2025</time> — <time datetime="2025-06">Juin 2025</time></p>
             </header>
             <p>Développement front-end, amélioration UI/UX et bases techniques pour les projets numériques.</p>
             <button class="button" data-modal="stage-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3 class="stage-with-logo"><img class="stage-logo-inline" src="assets/img/stage2/logo.jpg" alt="Logo Top Cafe" loading="lazy">Stage — Site vitrine restaurant filipino</h3>
+              <p><time datetime="2026-02">Février 2026</time> — <time datetime="2026-04">Avril 2026</time></p>
+            </header>
+            <p>Conception et développement d'un site vitrine pour présenter un restaurant filipino : identité visuelle, menus, informations pratiques et contact.</p>
+            <button class="button" data-modal="stage-actuel-modal">Voir plus de détails</button>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projets" aria-labelledby="titre-projets">
+      <h2 id="titre-projets">Projets</h2>
+      <p>Cette section présente une sélection de projets réalisés en autonomie ou dans le cadre de ma formation.</p>
+      <ol>
+        <li>
+          <article>
+            <header>
+              <h3>Mini Quiz personnalise sur les armes</h3>
+              <p><time datetime="2024">2024</time> — <span class="badge neutral">S1</span></p>
+            </header>
+            <p>Mini quiz réalisé en HTML, CSS et un peu de JavaScript, avec des questions personnalisées sur le thème des armes et un affichage du score final.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/quizz/quizz%20.png" alt="Couverture du mini quiz" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-quiz-armes-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Application Google Books</h3>
+              <p><time datetime="2026-04">Avril 2026</time> — <span class="badge neutral">S4</span></p>
+            </header>
+            <p>Développement d'une application web permettant la recherche de livres via l'API Google Books et la gestion d'une bibliothèque personnelle.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/google books/couverture.png" alt="Couverture du projet Google Books" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-google-books-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Portfolio BTS SIO SLAM</h3>
+              <p><time datetime="2026-03">Mars 2026</time> — <span class="badge neutral">S4</span></p>
+            </header>
+            <p>Portfolio personnel one-page pour présenter mon profil, mes projets, mon parcours et mon expérience de stage.</p>
+            <button class="button" data-modal="projet-portfolio-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Devoir Pokedex</h3>
+              <p><time datetime="2026-02">Février 2026</time> — <span class="badge neutral">S4</span></p>
+            </header>
+            <p>Mini-projet JavaScript connecté à la PokeAPI avec recherche, filtrage et affichage détaillé des créatures dans une interface type Pokedex.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/ar/couverture.png" alt="Couverture du projet Pokedex" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-pokedex-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Devoir Music</h3>
+              <p><time datetime="2026-01">Janvier 2026</time> — <span class="badge neutral">S4</span></p>
+            </header>
+            <p>Mini-projet de front-end autour d'un univers musical, avec mise en page, interaction utilisateur et organisation des contenus pour une presentation claire.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/music/couverture.png" alt="Couverture du projet Music" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-music-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>API simple de notes</h3>
+              <p><time datetime="2025-11">Novembre 2025</time> — <span class="badge neutral">S3</span></p>
+            </header>
+            <p>API REST pour gérer des notes d'étudiants avec des opérations CRUD et une base de données relationnelle.</p>
+            <button class="button" data-modal="projet-api-notes-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>Gestionnaire de tâches</h3>
+              <p><time datetime="2025-05">Mai 2025</time> — <span class="badge neutral">S2</span></p>
+            </header>
+            <p>Application web permettant d'ajouter, filtrer et suivre des tâches selon leur avancement.</p>
+            <button class="button" data-modal="projet-taches-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>AP1 Ascolia</h3>
+              <p><time datetime="2024-10">Octobre 2024</time> — <span class="badge neutral">S1</span></p>
+            </header>
+            <p>Conception et réalisation d'un site vitrine de présentation pour une entreprise fictive et virtuelle. Projet de mise en pratique des compétences web initiales.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/ascolia/logo.png" alt="Logo du projet Ascolia" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-ascolia-modal">Voir plus de détails</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h3>AP2 FOOT local</h3>
+              <p><time datetime="2026-03-03">3 Mars 2026</time> — <span class="badge neutral">S4</span></p>
+            </header>
+            <p>Application web de gestion de clubs de football avec backend Symfony API REST, authentification JWT et interface React. Gestion des clubs, joueurs, matchs, tournois et favoris utilisateurs.</p>
+            <figure class="project-cover-small">
+              <img src="assets/img/projet/ap2 foot local/site.png" alt="Couverture du projet AP2 FOOT local" loading="lazy">
+            </figure>
+            <button class="button" data-modal="projet-foot-modal">Voir plus de détails</button>
           </article>
         </li>
       </ol>
@@ -152,25 +278,29 @@
       <h2 id="titre-veille">Veille technologique</h2>
       <div class="cards-grid">
 
-        <button class="card-item" data-modal="veille-modal" aria-label="Voir la veille sur les robots chiens militaires">
-          <figure class="card-cover" aria-hidden="true"></figure>
+        <button class="card-item" data-modal="veille-modal" aria-label="Voir la veille sur le chien robotique">
+          <figure class="card-cover" aria-hidden="true">
+            <img class="card-cover-image" src="assets/img/robot-chien.jpg" alt="" loading="lazy">
+          </figure>
           <div class="card-body">
             <span class="card-tag">Robotique · 2024</span>
-            <h3>Les robots chiens militaires</h3>
+            <h3>Chien robotique</h3>
             <p>Usages militaires des robots quadrupedes, enjeux techniques et ethiques.</p>
           </div>
-          <span class="card-cta">Voir detail →</span>
+          <span class="card-cta">Voir les détails →</span>
         </button>
 
-        <div class="card-item card-placeholder" aria-label="Deuxieme veille en cours de redaction">
-          <figure class="card-cover" aria-hidden="true"></figure>
+        <button class="card-item" data-modal="veille-spam-modal" aria-label="Voir la veille sur le spam et les arnaques telephoniques">
+          <figure class="card-cover" aria-hidden="true">
+            <img class="card-cover-image" src="assets/img/vt-tel/arnaque-tel.jpg" alt="" loading="lazy">
+          </figure>
           <div class="card-body">
-            <span class="card-tag">A venir</span>
-            <h3>Deuxieme veille</h3>
-            <p>deuxieme veuille pour le moment tkt</p>
+            <span class="card-tag">Sécurité numérique · 2025</span>
+            <h3>Spam &amp; Arnaques téléphoniques</h3>
+            <p>Spoofing, smishing, vishing : mécanismes des fraudes et solutions technologiques pour les contrer.</p>
           </div>
-          <span class="card-cta card-cta--disabled">Bientot disponible</span>
-        </div>
+          <span class="card-cta">Voir les détails →</span>
+        </button>
 
       </div>
     </section>
@@ -187,7 +317,7 @@
 
     <section id="contact" aria-labelledby="titre-contact">
       <h2 id="titre-contact">Contact</h2>
-      <p>Je suis disponible pour echanger autour d'un stage, d'une alternance ou d'un projet de developpement. Tu peux me contacter directement par email ou consulter mes depots sur GitHub.</p>
+      <p>Je suis disponible pour échanger autour d'un stage, d'une alternance ou d'un projet de développement. Tu peux me contacter directement par email ou consulter mes dépôts sur GitHub.</p>
       <ul aria-label="Liens utiles">
         <li><a href="https://github.com/raphaelRENZ">GitHub</a></li>
         <li><a href="mailto:raphaelrenzj@gmail.com">Email</a></li>
@@ -209,6 +339,12 @@
       </form>
       -->
     </section>
+
+    <section id="synthese" aria-labelledby="titre-synthese">
+      <h2 id="titre-synthese">Tableau de synthèse</h2>
+      <p>Il s'agit de mon tableau de synthèse.</p>
+      <button class="button secondary" data-modal="synthese-modal">Voir le tableau de synthèse</button>
+    </section>
   </main>
 
   <!-- Modal Stage -->
@@ -220,6 +356,11 @@
         <h2 id="modal-titre">Stage — AfroCaribe</h2>
         <p><time datetime="2025-05">Mai 2025</time> — <time datetime="2025-06">Juin 2025</time></p>
       </header>
+
+      <section class="stage-branding" aria-label="Identite visuelle AfroCaribe">
+        <img class="stage-logo-large" src="assets/img/stage1/logo.png" alt="Logo AfroCaribe" loading="lazy">
+        <p>Identite visuelle du stage chez AfroCaribe.</p>
+      </section>
       
       <section>
         <h3>Contexte</h3>
@@ -236,6 +377,12 @@
       </section>
 
       <section>
+        <h3>Site réalisé pendant le stage</h3>
+        <p>J'ai participé à la réalisation et aux améliorations du site AfroCaribe.</p>
+        <a class="button" href="https://lespagesafrocarib.com" target="_blank" rel="noopener">Voir le site AfroCaribe</a>
+      </section>
+
+      <section>
         <h3>Technologies utilisées</h3>
         <div class="tech-list">
           <span class="tech-tag">HTML</span>
@@ -249,17 +396,154 @@
 
       <section>
         <h3>Illustrations</h3>
+        <p class="meta">Production du site</p>
         <div class="modal-gallery">
-          <figure class="img-placeholder"><figcaption>Image 1</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 2</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 3</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 4</figcaption></figure>
+          <figure>
+            <img src="assets/img/stage1/site%20aceuille%20afro.png" alt="Capture du site AfroCaribe réalisé pendant le stage" loading="lazy">
+            <figcaption>Accueil du site AfroCaribe</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage1/inscription.png" alt="Capture de la page d'inscription du site" loading="lazy">
+            <figcaption>Page d'inscription</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage1/discord.png" alt="Capture de l'integration Discord sur le site" loading="lazy">
+            <figcaption>Integration Discord</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage1/DISCORD%201.png" alt="Deuxieme capture de la section Discord" loading="lazy">
+            <figcaption>Section Discord (vue detaillee)</figcaption>
+          </figure>
+        </div>
+
+        <p class="meta">Identite visuelle</p>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/stage1/site%20compley.png" alt="Capture du site complet réalisé pendant le stage" loading="lazy">
+            <figcaption>Site complet (version stage)</figcaption>
+          </figure>
+        </div>
+
+        <p class="meta">Suivi et communication</p>
+        <p>Pendant le stage, j'avais des reunions a distance tous les jours a 18h pour faire le point, valider les priorites et ajuster les evolutions du site.</p>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/stage1/reunion%201.jpg" alt="Capture d'une reunion de suivi du projet" loading="lazy">
+            <figcaption>Reunion de suivi (1)</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage1/reunion%202.jpg" alt="Deuxieme capture de reunion de suivi" loading="lazy">
+            <figcaption>Reunion de suivi (2)</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage1/reunion%20gmail.png" alt="Capture d'echanges Gmail pour le suivi du projet" loading="lazy">
+            <figcaption>Echanges Gmail</figcaption>
+          </figure>
         </div>
       </section>
 
       <section>
         <h3>Résultats & Apprentissages</h3>
         <p>Ce stage m’a permis de consolider mes compétences en développement front-end, de mieux comprendre la conception d’un projet web de A à Z, de travailler de manière autonome et organisée, de découvrir des outils professionnels comme GitLab et Symfony, et d’améliorer ma sensibilité au design et à l’expérience utilisateur. Mon travail a contribué à améliorer la qualité et la cohérence des pages web d’AfroCaribe.</p>
+      </section>
+
+      <section>
+        <h3>Document KBIS — Les Pages Antillaises</h3>
+        <p>Le KBIS des Pages Antillaises est disponible en PDF pour compléter la partie administrative du stage 1.</p>
+        <a class="button secondary" href="assets/img/stage1/Extrait%20KBIS_Les%20Pages%20Antillaises.pdf" target="_blank" rel="noopener">Ouvrir le KBIS (PDF)</a>
+      </section>
+    </div>
+  </div>
+
+  <div id="stage-actuel-modal" class="modal" role="dialog" aria-labelledby="stage-actuel-modal-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="stage-actuel-modal-titre">Stage — Site vitrine pour un restaurant filipino</h2>
+        <p><time datetime="2026-02">Février 2026</time> — <time datetime="2026-04">Avril 2026</time></p>
+      </header>
+
+      <section class="stage-branding" aria-label="Identité visuelle Top Cafe">
+        <img class="stage-logo-large" src="assets/img/stage2/logo.jpg" alt="Logo Top Cafe" loading="lazy">
+        <p>Identité visuelle du stage Top Cafe.</p>
+      </section>
+
+      <section>
+        <h3>Contexte</h3>
+        <p>L'objectif du stage était de créer un site vitrine clair et moderne pour valoriser l'identité d'un restaurant filipino, faciliter la découverte de la carte, afficher les informations utiles (horaires, localisation, contact) et donner une image plus professionnelle de l'établissement.</p>
+      </section>
+
+      <section>
+        <h3>Création du site (étapes réalisées)</h3>
+        <ul>
+          <li><strong>Cadrage du besoin :</strong> identification des pages importantes (accueil, menu, a propos, contact) et des informations prioritaires pour les visiteurs.</li>
+          <li><strong>Structure et maquettes :</strong> organisation de la navigation, hiérarchie visuelle des contenus et création d'une base responsive pour mobile et desktop.</li>
+          <li><strong>Intégration front-end :</strong> implémentation HTML/CSS/JavaScript des sections, composants et interactions utiles (navigation, boutons, mise en avant des plats).</li>
+          <li><strong>Mise en valeur du contenu :</strong> preparation des emplacements photos, textes descriptifs et blocs de presentation pour remplacer facilement les contenus definitifs.</li>
+          <li><strong>Finalisation :</strong> ajustements d'ergonomie, cohérence visuelle et tests d'affichage pour obtenir un rendu propre et lisible.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Technologies utilisees</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Maquette Figma &amp; Charte graphique</h3>
+        <p>Extrait de la maquette réalisée sur Figma en début de développement, avec la charte graphique du site (palette de couleurs, logo, typographie et structure des sections).</p>
+        <figure class="modal-figma-preview">
+          <img src="assets/img/stage2/maquette-top-cafe.jpg.png" alt="Extrait de la maquette Figma du site vitrine Top Cafe avec charte graphique" loading="lazy">
+          <figcaption>Maquette one-page &amp; charte graphique — conçue sur Figma avant l'intégration</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Illustrations du site</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/stage2/img2.png" alt="Image du site vitrine - Hero / facade ou ambiance" loading="lazy">
+            <figcaption>Hero / facade ou ambiance</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage2/img3.png" alt="Image du site vitrine - Specialites / plats" loading="lazy">
+            <figcaption>Specialites / plats</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage2/img4.png" alt="Image du site vitrine - Page menu" loading="lazy">
+            <figcaption>Page menu</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage2/img5.jpg" alt="Image du site vitrine - Section a propos" loading="lazy">
+            <figcaption>Section a propos</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/stage2/SITE.png" alt="Image du site vitrine - Contact et localisation" loading="lazy">
+            <figcaption>Contact et localisation</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h3>Suivi de projet — Document collaboratif</h3>
+        <p>Tout au long du stage, j'ai tenu a jour un document Google Doc partage avec ma responsable. Elle pouvait le consulter a tout moment et on faisait des points reguliers pour ajuster ou valider les avancees.</p>
+        <a class="button" href="https://docs.google.com/document/d/1awiWixlwmCbd4UO8RvgMpB2BSFmdYDX6NzEHgZe7PFo/edit?tab=t.0" target="_blank" rel="noopener">Voir le document de suivi →</a>
+      </section>
+
+      <section>
+        <h3>Document KBIS — Top Cafe</h3>
+        <p>Le KBIS de Top Cafe est disponible en PDF pour appuyer la partie administrative du stage.</p>
+        <a class="button secondary" href="static/kbis%20top-caf%C3%A9.pdf" target="_blank" rel="noopener">Ouvrir le KBIS (PDF)</a>
+      </section>
+
+      <section>
+        <h3>Résultats & apprentissages</h3>
+        <p>Ce stage m'a permis de travailler sur un besoin concret de communication digitale, de structurer un site vitrine complet, d'améliorer ma logique d'intégration et de renforcer mon autonomie sur l'ensemble du cycle de création d'une page web.</p>
       </section>
     </div>
   </div>
@@ -269,42 +553,647 @@
     <div class="modal-content">
       <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
       <header>
-        <h2 id="veille-modal-titre">Veille technologique 2024 - Chiens-robots militaires</h2>
+        <h2 id="veille-modal-titre">Veille technologique 2024 - Chien robotique</h2>
       </header>
 
+      <figure class="modal-figma-preview">
+        <img src="assets/img/vt-chien/chien.png" alt="Illustration principale de la veille sur les chiens-robots" loading="lazy">
+        <figcaption>Vue d'ensemble des chiens-robots</figcaption>
+      </figure>
+
       <section>
-        <h3>Presentation</h3>
-        <p>Depuis plusieurs annees, les progres en robotique ont permis la creation de robots quadrupedes appeles chiens-robots. A l'origine, ces machines etaient concues pour des usages civils comme l'exploration, l'inspection industrielle ou les missions de secours.</p>
+        <h3>Présentation</h3>
+        <p>Depuis plusieurs années, les progrès en robotique ont permis la création de robots quadrupèdes appelés chiens-robots. À l'origine, ces machines étaient conçues pour des usages civils comme l'exploration, l'inspection industrielle ou les missions de secours.</p>
       </section>
 
       <section>
         <h3>Contexte et acteurs</h3>
-        <p>Une entreprise connue dans ce domaine est Boston Dynamics, qui a developpe des robots comme Spot ou Atlas. Grace a leur agilite et leur capacite a se deplacer sur des terrains difficiles, ces robots ont rapidement attire l'interet des armees.</p>
+        <p>Une entreprise connue dans ce domaine est Boston Dynamics, qui a développé des robots comme Spot ou Atlas. Grâce à leur agilité et leur capacité à se déplacer sur des terrains difficiles, ces robots ont rapidement attiré l'intérêt des armées.</p>
+        <figure class="modal-figma-preview">
+          <img src="assets/img/vt-chien/Capture d'écran 2026-05-11 103232.png" alt="Exemple d'application et d'acteurs de la robotique quadrupède" loading="lazy">
+          <figcaption>Acteurs et cas d'usage du secteur</figcaption>
+        </figure>
       </section>
 
       <section>
         <h3>Usages militaires</h3>
-        <p>Aujourd'hui, certains chiens-robots sont utilises pour des missions militaires comme la reconnaissance, la surveillance de bases ou la patrouille. Certains modeles peuvent meme etre equipes de capteurs avances ou d'armes, comme le robot Vision 60 developpe par Ghost Robotics.</p>
+        <p>Aujourd'hui, certains chiens-robots sont utilisés pour des missions militaires comme la reconnaissance, la surveillance de bases ou la patrouille. Certains modèles peuvent même être équipés de capteurs avancés ou d'armes, comme le robot Vision 60 développé par Ghost Robotics.</p>
       </section>
 
       <section>
         <h3>Limites et enjeux</h3>
-        <p>Cependant, leur utilisation souleve plusieurs questions importantes : les risques de piratage, les decisions prises par l'intelligence artificielle, et les debats ethiques sur l'utilisation d'armes autonomes.</p>
+        <p>Cependant, leur utilisation soulève plusieurs questions importantes : les risques de piratage, les décisions prises par l'intelligence artificielle, et les débats éthiques sur l'utilisation d'armes autonomes.</p>
       </section>
 
       <section>
         <h3>Illustrations</h3>
         <div class="modal-gallery">
-          <figure class="img-placeholder"><figcaption>Image 1 - Couverture</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 2 - Spot / Boston Dynamics</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 3 - Vision 60 / Ghost Robotics</figcaption></figure>
-          <figure class="img-placeholder"><figcaption>Image 4 - Exemple d'usage terrain</figcaption></figure>
+          <figure>
+            <img src="assets/img/robot-chien.jpg" alt="Illustration d'un chien robotique" loading="lazy">
+            <figcaption>Chien robotique utilisé comme illustration de veille</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/vt-chien/Capture d'écran 2026-05-11 102914.png" alt="Capture liée aux enjeux des chiens-robots" loading="lazy">
+            <figcaption>Exemple visuel complémentaire</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/vt-chien/Capture d'écran 2026-05-11 103345.png" alt="Autre capture sur les usages des chiens-robots" loading="lazy">
+            <figcaption>Illustration des usages et débats</figcaption>
+          </figure>
         </div>
       </section>
 
       <section>
         <h3>Conclusion</h3>
-        <p>Pour conclure, les chiens-robots font deja partie des nouvelles technologies militaires, mais leur developpement pose des questions importantes sur l'avenir de la guerre et sur les limites a fixer a ces technologies.</p>
+        <p>Pour conclure, les chiens-robots font déjà partie des nouvelles technologies militaires, mais leur développement pose des questions importantes sur l'avenir de la guerre et sur les limites à fixer à ces technologies.</p>
+      </section>
+    </div>
+  </div>
+
+  <div id="synthese-modal" class="modal" role="dialog" aria-labelledby="synthese-modal-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content modal-content--document">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="synthese-modal-titre">Mon tableau de synthèse</h2>
+      </header>
+
+      <p>Il s'agit de mon tableau de synthèse.</p>
+      <div class="document-viewer-layout">
+        <div class="document-viewer" aria-label="Aperçu du tableau de synthèse">
+          <iframe
+            src="static/Jaen%20Raphael%20Renz%20Tableau%20de%20Synthese.pdf#view=FitH"
+            title="Tableau de synthèse"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <figure class="document-image-fallback" aria-label="Image de secours du tableau de synthèse">
+          <img
+            src="assets/img/tableau-synthese.png?v=20260512-1"
+            alt="Image de secours du tableau de synthèse"
+            loading="lazy"
+            onload="this.style.display='block';"
+            onerror="this.style.display='none';">
+        </figure>
+      </div>
+      <p><a href="static/Jaen%20Raphael%20Renz%20Tableau%20de%20Synthese.pdf" target="_blank" rel="noopener">Ouvrir le document dans un nouvel onglet</a></p>
+    </div>
+  </div>
+
+  <!-- Modales Projets -->
+  <div id="projet-quiz-armes-modal" class="modal" role="dialog" aria-labelledby="projet-quiz-armes-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-quiz-armes-titre">Mini Quiz personnalise sur les armes</h2>
+        <p><time datetime="2024">2024</time> — Projet de formation (S1)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Projet de quiz interactif réalisé en 2024 pour travailler les bases du développement front-end. Le quiz propose des questions personnalisées sur les armes avec navigation entre les questions et résultat final.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Creation de la structure HTML du quiz</li>
+          <li>Mise en forme CSS de l'interface</li>
+          <li>Logique JavaScript pour gerer les questions et le score</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+      <section>
+        <h3>Illustrations</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/quizz/quizz%20.png" alt="Ecran principal du quiz" loading="lazy">
+            <figcaption>Ecran principal avec lancement du quiz</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/quizz/vie.png" alt="Systeme de vies du quiz" loading="lazy">
+            <figcaption>Gestion des vies pendant les questions</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/quizz/gagné.png" alt="Ecran de victoire du quiz" loading="lazy">
+            <figcaption>Affichage du resultat final en cas de reussite</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-google-books-modal" class="modal" role="dialog" aria-labelledby="projet-google-books-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-google-books-titre">Application Google Books</h2>
+        <p><time datetime="2026-04">Avril 2026</time> — Devoir de formation (S4)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Développement d'une application web permettant la recherche de livres via l'API Google Books et la gestion d'une bibliothèque personnelle.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Connexion et consommation de l'API Google Books</li>
+          <li>Mise en place de la recherche et du filtrage des résultats</li>
+          <li>Gestion d'une bibliothèque personnelle côté client</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Google Books API</span>
+          <span class="tech-tag">Gestion des cles API (.env)</span>
+          <span class="tech-tag">Filtrage des donnees</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Maitrise des appels API en JavaScript</li>
+          <li>Bonne pratique de gestion des cles via environnement .env</li>
+          <li>Interface exploitable pour demontrer la logique metier</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Captures</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/google books/couverture.png" alt="Couverture du projet Google Books" loading="lazy">
+            <figcaption>Couverture du projet</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/google books/recherche%20et%20filtre.png" alt="Interface de recherche et de filtre" loading="lazy">
+            <figcaption>Ecran de recherche et filtrage</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/google books/resultat.png" alt="Résultats de recherche Google Books" loading="lazy">
+            <figcaption>Affichage des résultats</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/google books/card%20livre.png" alt="Carte livre du projet Google Books" loading="lazy">
+            <figcaption>Carte detaillee d'un livre</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-portfolio-modal" class="modal" role="dialog" aria-labelledby="projet-portfolio-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-portfolio-titre">Portfolio BTS SIO SLAM</h2>
+        <p><time datetime="2026-03">Mars 2026</time> — Projet personnel (S4)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Portfolio personnel one-page pour presenter mon profil, mes projets, mon parcours et mon experience de stage.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Structure HTML semantique</li>
+          <li>Integration responsive</li>
+          <li>Mise en ligne sur GitHub Pages</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Site publiable</li>
+          <li>Presentation centralisee de mon parcours</li>
+          <li>Base evolutive pour ajouter de nouveaux projets</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Liens</h3>
+        <p><a href="https://github.com/raphaelRENZ/portfolio-RJ">Depot GitHub</a> • <a href="https://raphaelrenz.github.io/portfolio-RJ/">Voir la demo</a></p>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-pokedex-modal" class="modal" role="dialog" aria-labelledby="projet-pokedex-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-pokedex-titre">Devoir Pokedex</h2>
+        <p><time datetime="2026-02">Février 2026</time> — Projet de formation (S4)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Mini-projet JavaScript connecté à la PokeAPI pour rechercher des Pokemon, filtrer les résultats et afficher leurs informations principales (nom, visuel, caractéristiques) dans une interface type Pokedex.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Connexion a l'API Pokemon</li>
+          <li>Affichage dynamique des fiches</li>
+          <li>Recherche et navigation dans les donnees</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PokeAPI</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Consolidation des appels API</li>
+          <li>Meilleure maitrise du DOM en JavaScript</li>
+          <li>Projet facilement montrable en demonstration</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Illustrations du projet</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/ar/pokedex-page.png" alt="Vue generale de la page Pokedex" loading="lazy">
+            <figcaption>Vue generale du Pokedex</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ar/filtre.png" alt="Exemple de filtrage dans le Pokedex" loading="lazy">
+            <figcaption>Filtrage des Pokemon</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ar/pokemon.png" alt="Affichage detaille d'un Pokemon" loading="lazy">
+            <figcaption>Fiche Pokemon detaillee</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ar/filtre%20complet.png" alt="Vue du systeme de filtrage complet du Pokedex" loading="lazy">
+            <figcaption>Filtrage complet</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-music-modal" class="modal" role="dialog" aria-labelledby="projet-music-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-music-titre">Devoir Music</h2>
+        <p><time datetime="2026-01">Janvier 2026</time> — Projet de formation (S4)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Mini-projet de front-end autour d'un univers musical, avec mise en page, interaction utilisateur et organisation des contenus pour une presentation claire.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Integration de l'interface</li>
+          <li>Structuration des sections</li>
+          <li>Ajout des interactions JavaScript</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Travail sur le responsive</li>
+          <li>Meilleure organisation du code front-end</li>
+          <li>Projet presentable dans le portfolio</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Illustrations</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/music/couverture.png" alt="Couverture du projet Music" loading="lazy">
+            <figcaption>Couverture du projet</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/music/card music.png" alt="Card Music" loading="lazy">
+            <figcaption>Carte musicale</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/music/Capture d'écran 2026-05-11 234850.png" alt="Capture d'écran du projet" loading="lazy">
+            <figcaption>Interface du projet</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-api-notes-modal" class="modal" role="dialog" aria-labelledby="projet-api-notes-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-api-notes-titre">API simple de notes</h2>
+        <p><time datetime="2025-11">Novembre 2025</time> — Projet de formation (S3)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>API REST pour gérer des notes d'étudiants avec des opérations CRUD et une base de données relationnelle.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Modelisation des donnees</li>
+          <li>Implementation des routes</li>
+          <li>Documentation de base</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Premiere API fonctionnelle</li>
+          <li>Mise en pratique du CRUD</li>
+          <li>Travail sur la structure backend</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-taches-modal" class="modal" role="dialog" aria-labelledby="projet-taches-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-taches-titre">Gestionnaire de tâches</h2>
+        <p><time datetime="2025-05">Mai 2025</time> — Projet de formation (S2)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Application web permettant d'ajouter, filtrer et suivre des tâches selon leur avancement.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Structure de l'interface</li>
+          <li>Logique de filtrage</li>
+          <li>Tests fonctionnels</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Manipulation du DOM</li>
+          <li>Gestion d'etat cote client</li>
+          <li>Interface plus lisible et responsive</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-ascolia-modal" class="modal" role="dialog" aria-labelledby="projet-ascolia-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-ascolia-titre">AP1 Ascolia</h2>
+        <p><time datetime="2024-10">Octobre 2024</time> — Projet de formation (S1)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Conception et réalisation d'un site vitrine de présentation pour une entreprise fictive et virtuelle. Ce projet a permis de mettre en pratique les compétences web initiales acquises lors de la première période de formation.</p>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Design et maquette du site vitrine</li>
+          <li>Développement de la structure HTML</li>
+          <li>Mise en forme et styles CSS</li>
+          <li>Optimisation de la presentabilite</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Technologies</h3>
+        <div class="tech-list">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+        </div>
+      </section>
+      <section>
+        <h3>Résultats</h3>
+        <ul>
+          <li>Site vitrine fonctionnel et responsive</li>
+          <li>Design coherent et professionnel</li>
+          <li>Base solide pour les projets suivants</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Illustrations</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/ascolia/logo.png" alt="Logo Ascolia" loading="lazy">
+            <figcaption>Logo d'Ascolia</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ascolia/produit.png" alt="Page produit Ascolia" loading="lazy">
+            <figcaption>Page produit</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ascolia/trello.png" alt="Tableau Trello du projet" loading="lazy">
+            <figcaption>Tableau de projet Trello</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="projet-foot-modal" class="modal" role="dialog" aria-labelledby="projet-foot-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="projet-foot-titre">AP2 FOOT local</h2>
+        <p><time datetime="2026-03-03">3 Mars 2026</time> — Projet de formation (S4)</p>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>Application web de gestion de clubs de football avec une architecture complète separation backend/frontend. Permet de gerer l'ensemble de l'ecosysteme d'un club sportif avec des features avancees d'authentification et de gestion d'utilisateurs.</p>
+      </section>
+      <section>
+        <h3>Fonctionnalites</h3>
+        <ul>
+          <li>Gestion des clubs et equipes</li>
+          <li>Gestion des joueurs et profils</li>
+          <li>Planification et résultats des matchs</li>
+          <li>Gestion des tournois</li>
+          <li>Systeme de favoris utilisateurs</li>
+          <li>Authentification JWT securisee</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Stack technique</h3>
+        <div class="tech-list">
+          <span class="tech-tag">Symfony</span>
+          <span class="tech-tag">API REST</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">JWT</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </section>
+      <section>
+        <h3>Contributions principales</h3>
+        <ul>
+          <li>Architecture et conception de l'API REST</li>
+          <li>Authentification et securite JWT</li>
+          <li>Interface React responsive</li>
+          <li>Gestion des donnees et base de donnees</li>
+          <li>Integration backend/frontend</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Illustrations</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/LOGO.png" alt="Logo FOOT local" loading="lazy">
+            <figcaption>Logo du projet</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/site.png" alt="Vue generale du site FOOT local" loading="lazy">
+            <figcaption>Vue generale de l'application</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/maqUETTE.png" alt="Maquette du projet FOOT local" loading="lazy">
+            <figcaption>Maquette de l'interface</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/REQUETTE.png" alt="Exemple de requete API" loading="lazy">
+            <figcaption>Requetes API REST</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/connexrion admin .png" alt="Connexion administrateur" loading="lazy">
+            <figcaption>Ecran de connexion admin</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/tableau admin.png" alt="Tableau de bord administrateur" loading="lazy">
+            <figcaption>Tableau de bord administrateur</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/club.png" alt="Gestion des clubs" loading="lazy">
+            <figcaption>Gestion des clubs</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/tournois.png" alt="Gestion des tournois" loading="lazy">
+            <figcaption>Gestion des tournois</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/COUPE LOCAL.png" alt="Ecran coupe locale" loading="lazy">
+            <figcaption>Module Coupe locale</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/projet/ap2 foot local/trello.png" alt="Tableau Trello du projet" loading="lazy">
+            <figcaption>Tableau de projet Trello</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <h3>Ressources</h3>
+        <p><a href="https://trello.com/b/lqzHvtHA/ap2r" target="_blank" rel="noopener noreferrer">Voir le Trello du projet</a></p>
+      </section>
+    </div>
+  </div>
+
+  <div id="veille-spam-modal" class="modal" role="dialog" aria-labelledby="veille-spam-titre" aria-hidden="true">
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-modal-close aria-label="Fermer">&times;</button>
+      <header>
+        <h2 id="veille-spam-titre">Spam &amp; Arnaques téléphoniques</h2>
+        <p>Sécurité numérique et protection des données — Veille 2025</p>
+      </header>
+      <figure class="modal-figma-preview">
+        <img src="assets/img/vt-tel/arnaque-tel.jpg" alt="Illustration des arnaques téléphoniques" loading="lazy">
+        <figcaption>Vue d'ensemble des arnaques téléphoniques</figcaption>
+      </figure>
+      <section>
+        <h3>Contexte</h3>
+        <p>Le harcèlement téléphonique et les tentatives d'escroquerie (smishing, vishing) sont en constante évolution. Cette veille porte sur les mécanismes techniques utilisés par les fraudeurs et les solutions déployées pour les contrer.</p>
+      </section>
+      <section>
+        <h3>Le Spoofing : usurpation de numéro</h3>
+        <p>Les fraudeurs utilisent des serveurs <strong>VoIP</strong> pour masquer leur identité et afficher un numéro local ou celui d'une banque. Cela rend les listes noires classiques (comme Bloctel) partiellement inefficaces, car le numéro change constamment.</p>
+        <figure class="modal-figma-preview">
+          <img src="assets/img/vt-tel/images.png" alt="Exemples de fraudes par spoofing" loading="lazy">
+          <figcaption>Exemples concrets de fraudes et d'usurpation</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h3>Méthodes d'arnaque identifiées</h3>
+        <ul>
+          <li><strong>Ping Call</strong> — Appels courts pour inciter à rappeler un numéro surtaxé</li>
+          <li><strong>SMS Amendes/Colis</strong> — Faux sites de paiement pour voler des coordonnées bancaires</li>
+          <li><strong>Arnaque CPF/Rénovation</strong> — Exploitation de bases de données fuitées pour cibler les victimes</li>
+          <li><strong>Clonage de voix par IA</strong> — Un simple « Allô » suffit pour capturer et reproduire une voix. Les fraudeurs appellent ensuite les proches en se faisant passer pour la victime afin d'extorquer de l'argent en urgence.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Focus : l'arnaque au clonage de voix</h3>
+        <p>Grâce aux outils d'IA générative, quelques secondes d'enregistrement audio suffisent pour cloner une voix de manière convaincante. Le fraudeur appelle un proche en imitant la voix de la victime, prétextant une urgence (accident, arrestation, perte de portefeuille) pour réclamer un virement immédiat. La technique se démocratise et touche désormais le grand public.</p>
+        <p><strong>Comment se protéger ?</strong> Convenir d'un <em>mot de passe familial</em> à utiliser en cas de doute, ne jamais effectuer de virement sous pression, et rappeler le proche sur son numéro habituel pour vérifier.</p>
+      </section>
+      <section>
+        <h3>Solutions technologiques &amp; réglementaires</h3>
+        <ul>
+          <li><strong>Loi Naegelen (France)</strong> — Interdit l'usage de numéros mobiles par des systèmes automatisés. Efficacité haute sur le spam commercial.</li>
+          <li><strong>Protocole STIR/SHAKEN</strong> — Authentification des appels pour vérifier que le numéro n'est pas usurpé. En cours de déploiement.</li>
+          <li><strong>Filtrage par IA</strong> — Applications (Google Phone, Orange Téléphone) analysant le comportement des appels en temps réel. Très efficace.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Illustrations</h3>
+        <div class="modal-gallery">
+          <figure>
+            <img src="assets/img/vt-tel/report.png" alt="Signaler une arnaque" loading="lazy">
+            <figcaption>Comment signaler rapidement une arnaque</figcaption>
+          </figure>
+        </div>
       </section>
     </div>
   </div>
@@ -313,8 +1202,8 @@
     <p>&copy; <span id="current-year">2026</span> Raphael Renz Jaen</p>
     <p><small>Portfolio étudiant BTS SIO SLAM</small></p>
   </footer>
-  <script src="assets/js/ui.js" defer></script>
-  <script src="assets/js/projects.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/ui.js?v=20260511-3" defer></script>
+  <script src="assets/js/projects.js?v=20260511-3" defer></script>
+  <script src="assets/js/main.js?v=20260511-3" defer></script>
 </body>
 </html>

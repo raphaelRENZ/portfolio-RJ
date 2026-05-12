@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "id": "application-google-books",
+      "title": "Application Google Books",
+      "summary": "Developpement d'une application web permettant la recherche de livres via l'API Google Books et la gestion d'une bibliotheque personnelle.",
+      "technologies": ["JavaScript", "Google Books API", "Gestion des cles API (.env)", "Filtrage des donnees"],
+      "tags": ["mini-projet", "api", "javascript"],
+      "semester": "S4",
+      "date": "2026-04",
+      "context": "Devoir de formation",
+      "responsibilities": ["Connexion et consommation de l'API Google Books", "Mise en place de la recherche et du filtrage des resultats", "Gestion d'une bibliotheque personnelle cote client"],
+      "outcomes": ["Maitrise des appels API en JavaScript", "Bonne pratique de gestion des cles via environnement .env", "Interface exploitable pour demontrer la logique metier"],
+      "screenshotsPlaceholders": ["Photo 1 - Ecran de recherche", "Photo 2 - Resultats filtres", "Photo 3 - Bibliotheque personnelle"],
+      "links": {
+        "github": "",
+        "demo": ""
+      }
+    },
+    {
       "id": "portfolio-rj",
       "title": "Portfolio BTS SIO SLAM",
       "summary": "Portfolio personnel one-page pour presenter mon profil, mes projets, mon parcours et mon experience de stage.",
@@ -43,6 +60,54 @@
       "context": "Projet de formation",
       "responsibilities": ["Modelisation des donnees", "Implementation des routes", "Documentation de base"],
       "outcomes": ["Premiere API fonctionnelle", "Mise en pratique du CRUD", "Travail sur la structure backend"],
+      "links": {
+        "github": "",
+        "demo": ""
+      }
+    },
+    {
+      "id": "devoir-music",
+      "title": "Devoir Music",
+      "summary": "Mini-projet de front-end autour d'un univers musical, avec mise en page, interaction utilisateur et organisation des contenus pour une presentation claire.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "tags": ["mini-projet", "frontend", "ui"],
+      "semester": "S4",
+      "date": "2026-01",
+      "context": "Projet de formation",
+      "responsibilities": ["Integration de l'interface", "Structuration des sections", "Ajout des interactions JavaScript"],
+      "outcomes": ["Travail sur le responsive", "Meilleure organisation du code front-end", "Projet presentable dans le portfolio"],
+      "links": {
+        "github": "",
+        "demo": ""
+      }
+    },
+    {
+      "id": "devoir-pokedex",
+      "title": "Devoir Pokedex",
+      "summary": "Mini-projet JavaScript connecte a une API Pokemon pour rechercher des creatures, afficher leurs informations et proposer une experience type Pokedex.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PokeAPI"],
+      "tags": ["mini-projet", "api", "pokemon"],
+      "semester": "S4",
+      "date": "2026-02",
+      "context": "Projet de formation",
+      "responsibilities": ["Connexion a l'API Pokemon", "Affichage dynamique des fiches", "Recherche et navigation dans les donnees"],
+      "outcomes": ["Consolidation des appels API", "Meilleure maitrise du DOM en JavaScript", "Projet facilement montrable en demonstration"],
+      "links": {
+        "github": "",
+        "demo": ""
+      }
+    },
+    {
+      "id": "quiz-drapeaux-pays",
+      "title": "Quiz drapeaux et pays",
+      "summary": "Quiz interactif sur les drapeaux du monde avec verification des reponses et suivi du score.",
+      "technologies": ["HTML", "CSS", "JavaScript", "API REST Countries"],
+      "tags": ["mini-projet", "quiz", "api"],
+      "semester": "S4",
+      "date": "2026-03",
+      "context": "Mini-projet personnel",
+      "responsibilities": ["Creation de la logique de quiz", "Affichage dynamique des drapeaux", "Calcul du score et retours utilisateur"],
+      "outcomes": ["Consolidation de la logique conditionnelle", "Travail sur l'experience utilisateur", "Projet facilement enrichissable"],
       "links": {
         "github": "",
         "demo": ""
